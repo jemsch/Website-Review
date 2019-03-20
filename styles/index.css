@@ -3,31 +3,38 @@ body {
     margin: 0;
     letter-spacing: 2px;
     background-color: #3f3f3f;
-
+    font-weight: normal;
+    margin-bottom: 40px;
 }
-.flex-container {
-    display: flex;
-    flex-direction: column;
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+
+h3 {
+    font-weight: normal;
+    margin: 3px;
+}
+
+.navbar {
+    text-transform: uppercase;
+    background-color: black;
+    color: #ece5e5;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
   }
 
-  .navbar {
-      text-transform: uppercase;
-      background-color: black;
-      color: #ece5e5;
-      text-align: center;
-      line-height: 50px;
-      height: 50px;
+.navbar a {
+    color: #cac6c6;
+    text-decoration: none;
+    font-size: 20;
+}
 
-  }
-
-  .navbar a {
-      color: #cac6c6;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 20;
-  }
-
-.navbar a:hover {
+a:hover {
     background: red;
     background: -webkit-linear-gradient(left,red, orange , yellow, green, cyan, blue, violet);
     background: -o-linear-gradient(right, red,orange, yellow, green, cyan, blue, violet);
@@ -35,18 +42,91 @@ body {
     background: linear-gradient(to right,red, orange , yellow, green, cyan, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: "Comic Sans MS"; 
+    /* font-family: "Comic Sans MS";  */
 }
 
 .head {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     background-color: #f4f4f4;
-    margin-top: 3%;
+    margin-top: 4.3%;
     margin-left: 10%;
     margin-right: 10%;  
+    margin-bottom: 7%;
     height: auto;
+}
 
+.body{
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 7%;
+    margin-right: 7%;  
+}
+
+
+ul {
+    list-style-type:none;
+    text-align: center;
+}
+
+ul a {
+    list-style-type:none;
+    line-height: 50px;
+    font-size: 26px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    margin-right:30px;
+    width: auto;
+}
+  
+.site-row {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 30px 0;
+}
+  
+.site-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.site-text-container-header {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sub-navbar {
+    margin-top: 10px;
+    background-color: #a1a1a1;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;  
+    height: 25px;
+    line-height: 25px; 
+}
+
+.sub-navbar li {
+    display: inline;
+    font-size: 14px;
+    list-style-type:none;
+    text-align: center;
+    
+}
+.sub-navbar li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
 
 }
