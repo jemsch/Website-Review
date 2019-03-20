@@ -2,6 +2,7 @@ body {
     font-family: Arial;
     margin: 0;
     letter-spacing: 2px;
+    background-color: #3f3f3f;
 
 }
 .flex-container {
@@ -22,4 +23,30 @@ body {
   .navbar a {
       color: #cac6c6;
       text-decoration: none;
+      font-weight: bold;
+      font-size: 20;
   }
+
+.navbar a:hover {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head {
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;  
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+
