@@ -15,8 +15,8 @@ body {
       background-color: black;
       color: #ece5e5;
       text-align: center;
-      line-height: 40px;
-      height: 40px;
+      line-height: 50px;
+      height: 50px;
 
   }
 
@@ -29,24 +29,24 @@ body {
 
 .navbar a:hover {
     background: red;
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    background: -webkit-linear-gradient(left,red, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, red,orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right,red, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right,red, orange , yellow, green, cyan, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Comic Sans MS"; 
 }
 
 .head {
-    background-color: #f4f4f4;
-    text-align: center;
-    margin-top: 3%;
-    margin-left: 7%;
-    margin-right: 7%;  
     display: flex;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;  
+    height: auto;
+
 
 }
-
