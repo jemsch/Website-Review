@@ -26,6 +26,10 @@ h3 {
     position: fixed;
     width: 100%;
     top: 0px;
+
+    -webkit-box-shadow: 0 8px 6px -6px rgb(34, 34, 34);
+    -moz-box-shadow: 0 8px 6px -6px rgb(34, 34, 34);
+    box-shadow: 0 8px 6px -6px rgb(34, 34, 34);
   }
 
 .navbar a {
@@ -115,6 +119,11 @@ img {
     margin-right: 10%;  
     height: 25px;
     line-height: 25px; 
+
+    -webkit-box-shadow: 0 8px 6px -6px rgb(34, 34, 34);
+    -moz-box-shadow: 0 8px 6px -6px rgb(34, 34, 34);
+    box-shadow: 0 8px 6px -6px rgb(34, 34, 34);
+    
 }
 
 .sub-navbar li {
