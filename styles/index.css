@@ -2,24 +2,41 @@ body {
     font-family: Arial;
     margin: 0;
     letter-spacing: 2px;
-    background-color: #3f3f3f;
+    background-color: var(--color-page-background);
     font-weight: normal;
     margin-bottom: 40px;
+    color: var(--color-text-primary);
+
+--color-page-background: #1b1b1b;
+--color-page-inner-background: #303030;
+  --color-text-primary: #ece5e5;
+  --color-navbar: #000000;
 }
 
 h1 {
     font-family: 'Merriweather', serif;
+    color: var(--color-text-primary);
 }
 
 h3 {
     font-weight: normal;
     margin: 3px;
+    color: var(--color-text-primary);
+}
+
+a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+p {
+    color: var(--color-text-primary);
 }
 
 .navbar {
     text-transform: uppercase;
-    background-color: black;
-    color: #ece5e5;
+    background-color: var(--color-navbar);
+    color: --color-text-primary;
     text-align: center;
     line-height: 50px;
     height: 50px;
@@ -51,7 +68,8 @@ a:hover {
 
 .head {
     text-align: center;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+    background-color: var(--color-page-inner-background);
     margin-top: 4.0%;
     margin-left: 10%;
     margin-right: 10%;  
@@ -78,7 +96,7 @@ ul a {
     list-style-type:none;
     line-height: 50px;
     font-size: 26px;
-    color: black;
+    color: var(--color-text-primary);
     text-decoration: none;
     font-family: 'Merriweather', serif;
 }
@@ -107,8 +125,13 @@ img {
 
 .site-text-container-header {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
+}
+.site-text-container-footer {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 10px;
 }
 
 .sub-navbar {
@@ -142,3 +165,28 @@ img {
     text-align: center;
 
 }
+
+.lightmode {
+    --color-page-background: #e4e4e4;
+    --color-page-inner-background: #adadad;
+      --color-text-primary: #000000;
+      --color-navbar: #6d6d6d;
+}
+
+
+* {
+    transition: all .15s ease-in;
+}
+
+[data-switch-contrast] {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    height: 3rem;
+    width: 3rem;
+    
+    background-color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-light);
+    color: var(--color-primary-light);
+    border-radius: 50%;
+  }
